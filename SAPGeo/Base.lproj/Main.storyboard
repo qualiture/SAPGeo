@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="H1p-Uh-vWS">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Master-->
+        <scene sceneID="pY4-Hu-kfo">
+            <objects>
+                <navigationController title="Master" id="RMx-3f-FxP" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Pmd-2v-anx">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <attributedString key="userComments">
+                        <fragment content="NOTR: Do not translate it.">
+                            <attributes>
+                                <font key="NSFont" metaFont="smallSystem"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <connections>
+                        <segue destination="7bK-jq-Zjz" kind="relationship" relationship="rootViewController" id="iH1-OR-MEy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8fS-aE-onr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23" y="-45"/>
+        </scene>
+        <!--Detail-->
+        <scene sceneID="S0j-hi-djH">
+            <objects>
+                <tableViewController id="1pG-UN-CSf" customClass="DetailViewController" customModule="SAPGeo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="interactive" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="aRn-Ez-ZSR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FUISimplePropertyFormCell" id="AZC-Ee-U5j" customClass="FUISimplePropertyFormCell" customModule="SAPFiori">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AZC-Ee-U5j" id="Oeo-Qa-shB">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="1pG-UN-CSf" id="U4X-4D-dQ2"/>
+                            <outlet property="delegate" destination="1pG-UN-CSf" id="58m-FY-XIH"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Detail" id="tqe-9E-U4T">
+                        <barButtonItem key="rightBarButtonItem" title="Update" id="9uB-Ti-FOd">
+                            <attributedString key="userComments">
+                                <fragment content="XBUT: Text of Update button">
+                                    <attributes>
+                                        <font key="NSFont" metaFont="smallSystem"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <connections>
+                                <action selector="updateEntity:" destination="1pG-UN-CSf" id="Mut-5t-e7u"/>
+                            </connections>
+                        </barButtonItem>
+                        <attributedString key="userComments">
+                            <fragment content="XTIT: Title of Details view.">
+                                <attributes>
+                                    <font key="NSFont" metaFont="smallSystem"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="URm-7L-Bv0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1596" y="-45"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9ad-tx-Qsl">
+            <objects>
+                <navigationController id="CqV-bq-JAx" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yu1-N7-OpX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="1pG-UN-CSf" kind="relationship" relationship="rootViewController" id="Ddo-1M-uma"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VnZ-fc-IEQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="783" y="693"/>
+        </scene>
+        <!--SAMLAuthViewController-->
+        <scene sceneID="A0H-Nh-onH">
+            <objects>
+                <viewController storyboardIdentifier="SamlAuth" title="SAMLAuthViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="E15-q4-HAc" customClass="SAMLAuthViewController" customModule="SAPGeo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="I8P-9s-7uO"/>
+                        <viewControllerLayoutGuide type="bottom" id="y88-O5-OmP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GF8-NT-afB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <attributedString key="userComments">
+                        <fragment content="NOTR: Do not translate it.">
+                            <attributes>
+                                <font key="NSFont" metaFont="smallSystem"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zZz-d3-uIY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="530" y="-1558"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="Nki-YV-4Qg">
+            <objects>
+                <splitViewController storyboardIdentifier="Split" useStoryboardIdentifierAsRestorationIdentifier="YES" id="H1p-Uh-vWS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="zsf-RP-3RO"/>
+                    <connections>
+                        <segue destination="f44-bD-F7D" kind="relationship" relationship="masterViewController" id="Xrm-Hd-5An"/>
+                        <segue destination="RMx-3f-FxP" kind="relationship" relationship="detailViewController" id="2Gh-Lr-kLF"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cZU-Oi-B1e" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-856" y="-330"/>
+        </scene>
+        <!--Master-->
+        <scene sceneID="smW-Zh-WAh">
+            <objects>
+                <tableViewController storyboardIdentifier="Master" title="Master" clearsSelectionOnViewWillAppear="NO" id="7bK-jq-Zjz" customClass="MasterViewController" customModule="SAPGeo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="r7i-6Z-zg0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FUIObjectTableViewCell" id="WCw-Qf-5nD" customClass="FUIObjectTableViewCell" customModule="SAPFiori">
+                                <rect key="frame" x="0.0" y="22" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WCw-Qf-5nD" id="37f-cq-3Eg">
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <segue destination="1pG-UN-CSf" kind="show" identifier="showDetail" id="8DO-kx-v4v"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="7bK-jq-Zjz" id="Gho-Na-rnu"/>
+                            <outlet property="delegate" destination="7bK-jq-Zjz" id="RA6-mI-bju"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Zdf-7t-Un8">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="16l-x1-Mov">
+                            <connections>
+                                <segue destination="CqV-bq-JAx" kind="presentation" identifier="addEntity" modalPresentationStyle="formSheet" id="hUr-zm-qWy"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="p4D-Ou-IkE">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </refreshControl>
+                    <attributedString key="userComments">
+                        <fragment content="NOTR: Do not translate it.">
+                            <attributes>
+                                <font key="NSFont" metaFont="smallSystem"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="796" y="-45"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4Xi-0r-Jgx">
+            <objects>
+                <navigationController toolbarHidden="NO" id="f44-bD-F7D" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uXZ-bz-s3Z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="PUh-aB-xWd">
+                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="Hg4-SY-Mln" kind="relationship" relationship="rootViewController" id="Y9Y-g6-gsS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k5R-Lf-HUa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23" y="-803"/>
+        </scene>
+        <!--Collections-->
+        <scene sceneID="jjp-Yq-mbk">
+            <objects>
+                <tableViewController id="Hg4-SY-Mln" customClass="CollectionsViewController" customModule="SAPGeo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="tLb-Hl-PXu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CellID" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="FUISimplePropertyFormCell" id="gxP-4K-6ZL" customClass="FUISimplePropertyFormCell" customModule="SAPFiori">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gxP-4K-6ZL" id="B5e-0m-Ryz">
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="RMx-3f-FxP" kind="showDetail" identifier="showMaster" id="9bb-V2-VLg"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Hg4-SY-Mln" id="BQ0-Pe-hKZ"/>
+                            <outlet property="delegate" destination="Hg4-SY-Mln" id="qnH-hy-Kb3"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems>
+                        <barButtonItem title="Show Map" id="vR6-xI-ZDp">
+                            <connections>
+                                <segue destination="mWZ-Fk-gMs" kind="showDetail" identifier="showMap" id="OSL-o8-e5Z"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Collections" id="PEH-PR-IZU">
+                        <attributedString key="userComments">
+                            <fragment content="XTIT: Title of Collections screen.">
+                                <attributes>
+                                    <font key="NSFont" metaFont="smallSystem"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="size" keyPath="preferredContentSize">
+                            <size key="value" width="320" height="480"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rh0-z4-T5z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="796" y="-803"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="zLc-S9-TI5">
+            <objects>
+                <viewController title="Map View Controller" id="mWZ-Fk-gMs" customClass="MapViewController" customModule="SAPGeo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="z91-ON-kQB"/>
+                        <viewControllerLayoutGuide type="bottom" id="x1t-40-p2L"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8c5-QT-FeB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="I64-Sh-sa8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="I64-Sh-sa8" firstAttribute="top" secondItem="8c5-QT-FeB" secondAttribute="top" id="ETB-qb-GnR"/>
+                            <constraint firstItem="I64-Sh-sa8" firstAttribute="leading" secondItem="8c5-QT-FeB" secondAttribute="leading" id="NUZ-2E-rlC"/>
+                            <constraint firstAttribute="trailing" secondItem="I64-Sh-sa8" secondAttribute="trailing" id="Oah-Ce-3ty"/>
+                            <constraint firstItem="I64-Sh-sa8" firstAttribute="bottom" secondItem="x1t-40-p2L" secondAttribute="top" id="TvZ-Za-GdX"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem title="Zoom to geofence" id="2Fk-G3-1EL">
+                            <connections>
+                                <action selector="zoomToGeofence:" destination="mWZ-Fk-gMs" id="hhK-ub-aIw"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="mapView" destination="I64-Sh-sa8" id="5FE-fA-y1u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KKl-WM-TIe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1581.5999999999999" y="-803.74812593703155"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="9bb-V2-VLg"/>
+        <segue reference="8DO-kx-v4v"/>
+    </inferredMetricsTieBreakers>
+</document>

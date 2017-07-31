@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		008CA8C51F2D1B070022F2BF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008CA8C41F2D1B070022F2BF /* MapViewController.swift */; };
+		008CA8C71F2D39270022F2BF /* SAPGeoLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008CA8C61F2D39270022F2BF /* SAPGeoLocation.swift */; };
+		128604DA1E55B41600C698B5 /* SAPCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 128604D91E55B41600C698B5 /* SAPCommon.framework */; };
+		128604DB1E55B43B00C698B5 /* SAPCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 128604D91E55B41600C698B5 /* SAPCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		12E07EF21E96851800460A94 /* CollectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E07EF11E96851800460A94 /* CollectionType.swift */; };
+		2ED05C60A2EF5103E1AFAA69 /* SAPGeoServiceMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDE1F63E81521BBC0B6472F /* SAPGeoServiceMetadata.swift */; };
+		4DF7F70ED72714451B6EC529 /* GeoLocationMasterTableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AF5D8BE6A04BCEA13D403D /* GeoLocationMasterTableDelegate.swift */; };
+		527F2F1258C02184796C1617 /* GeoLocationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCF86AF1F681AA9D0532D5E /* GeoLocationType.swift */; };
+		753AAE9E1DCA20B400972B8E /* (null) in Sources */ = {isa = PBXBuildFile; };
+		753AAE9F1DCA20B400972B8E /* SAMLAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753AAE9D1DCA20B400972B8E /* SAMLAuthViewController.swift */; };
+		756192211DBE1A99007F562C /* SAPOData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7561921A1DBE1A90007F562C /* SAPOData.framework */; };
+		756192221DBE1A99007F562C /* SAPOData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7561921A1DBE1A90007F562C /* SAPOData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7569DA531E5C717C00C5D751 /* SAPFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7569DA511E5C716A00C5D751 /* SAPFoundation.framework */; };
+		7569DA541E5C717C00C5D751 /* SAPFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7569DA511E5C716A00C5D751 /* SAPFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		759BA2701E6821A7001C32BA /* SAPFiori.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 759BA26F1E6821A7001C32BA /* SAPFiori.framework */; };
+		759BA2721E6821AF001C32BA /* SAPFiori.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 759BA26F1E6821A7001C32BA /* SAPFiori.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		75AC42D11DAF824D00B445FF /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AC42CB1DAF824D00B445FF /* MasterViewController.swift */; };
+		75AC42D21DAF824D00B445FF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AC42CC1DAF824D00B445FF /* DetailViewController.swift */; };
+		75AC42D31DAF824D00B445FF /* (null) in Sources */ = {isa = PBXBuildFile; };
+		75AC42D41DAF824D00B445FF /* CollectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AC42CE1DAF824D00B445FF /* CollectionsViewController.swift */; };
+		75AC42DA1DAF868400B445FF /* Notifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AC42D91DAF868400B445FF /* Notifier.swift */; };
+		75AC42DC1DAF988700B445FF /* MasterTableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AC42DB1DAF988700B445FF /* MasterTableDelegate.swift */; };
+		75AC42DE1DAF988D00B445FF /* DetailTableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AC42DD1DAF988D00B445FF /* DetailTableDelegate.swift */; };
+		75C120341E682327005E9FD2 /* SAPOfflineOData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C120331E682327005E9FD2 /* SAPOfflineOData.framework */; };
+		75C120361E68232D005E9FD2 /* SAPOfflineOData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 75C120331E682327005E9FD2 /* SAPOfflineOData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		75C9C1151DC22E3B002055E6 /* RegexManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C9C1141DC22E3B002055E6 /* RegexManager.swift */; };
+		75DD10A41DC1F23B007EB4BC /* TypeValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DD10A31DC1F23B007EB4BC /* TypeValidator.swift */; };
+		7A1315B91D4B982000A5DA56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1315B81D4B982000A5DA56 /* AppDelegate.swift */; };
+		7A1315C21D4B982000A5DA56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A1315C11D4B982000A5DA56 /* Assets.xcassets */; };
+		7A1315C51D4B982000A5DA56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A1315C31D4B982000A5DA56 /* LaunchScreen.storyboard */; };
+		7AB2C56D1D50A95E00D1F039 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB2C56C1D50A95E00D1F039 /* Constants.swift */; };
+		9CB51DF14E93E315C94FD5C7 /* GeoLocationTypeDetailTableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F6D45AD32030AA86AEC3DB /* GeoLocationTypeDetailTableDelegate.swift */; };
+		A911671878DF4D5B069D723D /* SAPGeoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003C8CADFA8FFF0B1B2E802B /* SAPGeoService.swift */; };
+		CBCA7A991E3778A9001AF49E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBCA7A9B1E3778A9001AF49E /* Main.storyboard */; };
+		CBF918211DCC95B30037332A /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF918201DCC95B30037332A /* LoadingIndicator.swift */; };
+		FB416B075356FB4D79C939AE /* SAPGeoServiceDataAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DBB056BBEE75E3A483ADEA /* SAPGeoServiceDataAccess.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		758AC1C31D5A265200311F39 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7569DA541E5C717C00C5D751 /* SAPFoundation.framework in Embed Frameworks */,
+				128604DB1E55B43B00C698B5 /* SAPCommon.framework in Embed Frameworks */,
+				75C120361E68232D005E9FD2 /* SAPOfflineOData.framework in Embed Frameworks */,
+				756192221DBE1A99007F562C /* SAPOData.framework in Embed Frameworks */,
+				759BA2721E6821AF001C32BA /* SAPFiori.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		003C8CADFA8FFF0B1B2E802B /* SAPGeoService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SAPGeoService.swift; path = "Proxy Classes/com.sap.tutorials.demoapp.SAPGeo/public/SAPGeoService.swift"; sourceTree = "<group>"; };
+		008CA8C41F2D1B070022F2BF /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		008CA8C61F2D39270022F2BF /* SAPGeoLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAPGeoLocation.swift; sourceTree = "<group>"; };
+		008CA8C91F2DEDF80022F2BF /* TestLocations.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TestLocations.gpx; sourceTree = "<group>"; };
+		09AF5D8BE6A04BCEA13D403D /* GeoLocationMasterTableDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GeoLocationMasterTableDelegate.swift; path = TableDelegates/MasterTableDelegates/GeoLocationMasterTableDelegate.swift; sourceTree = "<group>"; };
+		128604D91E55B41600C698B5 /* SAPCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SAPCommon.framework; sourceTree = "<group>"; };
+		12E07EF11E96851800460A94 /* CollectionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionType.swift; sourceTree = "<group>"; };
+		1FCF86AF1F681AA9D0532D5E /* GeoLocationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GeoLocationType.swift; path = "Proxy Classes/com.sap.tutorials.demoapp.SAPGeo/public/GeoLocationType.swift"; sourceTree = "<group>"; };
+		4DDE1F63E81521BBC0B6472F /* SAPGeoServiceMetadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SAPGeoServiceMetadata.swift; path = "Proxy Classes/com.sap.tutorials.demoapp.SAPGeo/public/SAPGeoServiceMetadata.swift"; sourceTree = "<group>"; };
+		7526CCAC1D86B009007D789D /* SAPGeo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SAPGeo.entitlements; sourceTree = "<group>"; };
+		753AAE9D1DCA20B400972B8E /* SAMLAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAMLAuthViewController.swift; sourceTree = "<group>"; };
+		7561921A1DBE1A90007F562C /* SAPOData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SAPOData.framework; sourceTree = "<group>"; };
+		7569DA511E5C716A00C5D751 /* SAPFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SAPFoundation.framework; sourceTree = "<group>"; };
+		759BA26F1E6821A7001C32BA /* SAPFiori.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SAPFiori.framework; sourceTree = "<group>"; };
+		75AC42CB1DAF824D00B445FF /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		75AC42CC1DAF824D00B445FF /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		75AC42CE1DAF824D00B445FF /* CollectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionsViewController.swift; sourceTree = "<group>"; };
+		75AC42D91DAF868400B445FF /* Notifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifier.swift; sourceTree = "<group>"; };
+		75AC42DB1DAF988700B445FF /* MasterTableDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterTableDelegate.swift; sourceTree = "<group>"; };
+		75AC42DD1DAF988D00B445FF /* DetailTableDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableDelegate.swift; sourceTree = "<group>"; };
+		75C120331E682327005E9FD2 /* SAPOfflineOData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SAPOfflineOData.framework; sourceTree = "<group>"; };
+		75C9C1141DC22E3B002055E6 /* RegexManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegexManager.swift; sourceTree = "<group>"; };
+		75DD10A31DC1F23B007EB4BC /* TypeValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeValidator.swift; sourceTree = "<group>"; };
+		7A1315B51D4B982000A5DA56 /* SAPGeo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SAPGeo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A1315B81D4B982000A5DA56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7A1315C11D4B982000A5DA56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7A1315C41D4B982000A5DA56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7A1315C61D4B982000A5DA56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AB2C56C1D50A95E00D1F039 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B7DBB056BBEE75E3A483ADEA /* SAPGeoServiceDataAccess.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SAPGeoServiceDataAccess.swift; sourceTree = "<group>"; };
+		C7F6D45AD32030AA86AEC3DB /* GeoLocationTypeDetailTableDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GeoLocationTypeDetailTableDelegate.swift; path = TableDelegates/DetailTableDelegates/GeoLocationTypeDetailTableDelegate.swift; sourceTree = "<group>"; };
+		CB909D801E38CA8800218154 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB9BF1FE1E3A01D0004FE213 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		CBF918201DCC95B30037332A /* LoadingIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A1315B21D4B982000A5DA56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7569DA531E5C717C00C5D751 /* SAPFoundation.framework in Frameworks */,
+				756192211DBE1A99007F562C /* SAPOData.framework in Frameworks */,
+				75C120341E682327005E9FD2 /* SAPOfflineOData.framework in Frameworks */,
+				128604DA1E55B41600C698B5 /* SAPCommon.framework in Frameworks */,
+				759BA2701E6821A7001C32BA /* SAPFiori.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		008CA8C81F2DECED0022F2BF /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				008CA8C91F2DEDF80022F2BF /* TestLocations.gpx */,
+			);
+			name = Test;
+			sourceTree = "<group>";
+		};
+		7532C1BB1D5B6917004B03AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7AB2C56C1D50A95E00D1F039 /* Constants.swift */,
+				12E07EF11E96851800460A94 /* CollectionType.swift */,
+				B7DBB056BBEE75E3A483ADEA /* SAPGeoServiceDataAccess.swift */,
+				008CA8C61F2D39270022F2BF /* SAPGeoLocation.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		755C10B41D5C63B000ECF6A2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CBF918201DCC95B30037332A /* LoadingIndicator.swift */,
+				75AC42D91DAF868400B445FF /* Notifier.swift */,
+				75DD10A31DC1F23B007EB4BC /* TypeValidator.swift */,
+				75C9C1141DC22E3B002055E6 /* RegexManager.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		75AC42C11DAF7F6300B445FF /* TableDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				75AC42C31DAF7F8400B445FF /* DetailTableDelegates */,
+				75AC42C21DAF7F7700B445FF /* MasterTableDelegates */,
+			);
+			name = TableDelegates;
+			sourceTree = "<group>";
+		};
+		75AC42C21DAF7F7700B445FF /* MasterTableDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				75AC42DB1DAF988700B445FF /* MasterTableDelegate.swift */,
+				09AF5D8BE6A04BCEA13D403D /* GeoLocationMasterTableDelegate.swift */,
+			);
+			name = MasterTableDelegates;
+			sourceTree = "<group>";
+		};
+		75AC42C31DAF7F8400B445FF /* DetailTableDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				75AC42DD1DAF988D00B445FF /* DetailTableDelegate.swift */,
+				C7F6D45AD32030AA86AEC3DB /* GeoLocationTypeDetailTableDelegate.swift */,
+			);
+			name = DetailTableDelegates;
+			sourceTree = "<group>";
+		};
+		75AC42C81DAF80C000B445FF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				753AAE9D1DCA20B400972B8E /* SAMLAuthViewController.swift */,
+				75AC42CB1DAF824D00B445FF /* MasterViewController.swift */,
+				75AC42CC1DAF824D00B445FF /* DetailViewController.swift */,
+				75AC42CE1DAF824D00B445FF /* CollectionsViewController.swift */,
+				008CA8C41F2D1B070022F2BF /* MapViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		75D373EF1DD1FB0800888D4C /* Proxy Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AC2AED95E8F604F97EDD52DF /* com.sap.tutorials.demoapp.SAPGeo */,
+			);
+			name = "Proxy Classes";
+			sourceTree = "<group>";
+		};
+		7A1315AC1D4B982000A5DA56 = {
+			isa = PBXGroup;
+			children = (
+				7A1315B71D4B982000A5DA56 /* SAPGeo */,
+				7A1315B61D4B982000A5DA56 /* Products */,
+				7A1315CC1D4B990B00A5DA56 /* Frameworks */,
+				008CA8C81F2DECED0022F2BF /* Test */,
+			);
+			sourceTree = "<group>";
+		};
+		7A1315B61D4B982000A5DA56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A1315B51D4B982000A5DA56 /* SAPGeo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A1315B71D4B982000A5DA56 /* SAPGeo */ = {
+			isa = PBXGroup;
+			children = (
+				7526CCAC1D86B009007D789D /* SAPGeo.entitlements */,
+				7532C1BB1D5B6917004B03AF /* Model */,
+				75AC42C81DAF80C000B445FF /* ViewControllers */,
+				75AC42C11DAF7F6300B445FF /* TableDelegates */,
+				75D373EF1DD1FB0800888D4C /* Proxy Classes */,
+				755C10B41D5C63B000ECF6A2 /* Utils */,
+				7A1315B81D4B982000A5DA56 /* AppDelegate.swift */,
+				CBCA7A9B1E3778A9001AF49E /* Main.storyboard */,
+				7A1315C11D4B982000A5DA56 /* Assets.xcassets */,
+				7A1315C31D4B982000A5DA56 /* LaunchScreen.storyboard */,
+				7A1315C61D4B982000A5DA56 /* Info.plist */,
+			);
+			path = SAPGeo;
+			sourceTree = "<group>";
+		};
+		7A1315CC1D4B990B00A5DA56 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75C120331E682327005E9FD2 /* SAPOfflineOData.framework */,
+				759BA26F1E6821A7001C32BA /* SAPFiori.framework */,
+				7569DA511E5C716A00C5D751 /* SAPFoundation.framework */,
+				7561921A1DBE1A90007F562C /* SAPOData.framework */,
+				128604D91E55B41600C698B5 /* SAPCommon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC2AED95E8F604F97EDD52DF /* com.sap.tutorials.demoapp.SAPGeo */ = {
+			isa = PBXGroup;
+			children = (
+				F97C429EA662205A2A9545F2 /* public */,
+			);
+			name = com.sap.tutorials.demoapp.SAPGeo;
+			sourceTree = "<group>";
+		};
+		F97C429EA662205A2A9545F2 /* public */ = {
+			isa = PBXGroup;
+			children = (
+				1FCF86AF1F681AA9D0532D5E /* GeoLocationType.swift */,
+				003C8CADFA8FFF0B1B2E802B /* SAPGeoService.swift */,
+				4DDE1F63E81521BBC0B6472F /* SAPGeoServiceMetadata.swift */,
+			);
+			name = public;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7A1315B41D4B982000A5DA56 /* SAPGeo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A1315C91D4B982000A5DA56 /* Build configuration list for PBXNativeTarget "SAPGeo" */;
+			buildPhases = (
+				7A1315B11D4B982000A5DA56 /* Sources */,
+				7A1315B21D4B982000A5DA56 /* Frameworks */,
+				7A1315B31D4B982000A5DA56 /* Resources */,
+				758AC1C31D5A265200311F39 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SAPGeo;
+			productName = SAPGeo;
+			productReference = 7A1315B51D4B982000A5DA56 /* SAPGeo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7A1315AD1D4B982000A5DA56 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = SAP;
+				TargetAttributes = {
+					7A1315B41D4B982000A5DA56 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2L6XVDFSLV;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 7A1315B01D4B982000A5DA56 /* Build configuration list for PBXProject "SAPGeo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7A1315AC1D4B982000A5DA56;
+			productRefGroup = 7A1315B61D4B982000A5DA56 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A1315B41D4B982000A5DA56 /* SAPGeo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A1315B31D4B982000A5DA56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A1315C51D4B982000A5DA56 /* LaunchScreen.storyboard in Resources */,
+				7A1315C21D4B982000A5DA56 /* Assets.xcassets in Resources */,
+				CBCA7A991E3778A9001AF49E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A1315B11D4B982000A5DA56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				753AAE9E1DCA20B400972B8E /* (null) in Sources */,
+				75AC42D11DAF824D00B445FF /* MasterViewController.swift in Sources */,
+				75AC42D21DAF824D00B445FF /* DetailViewController.swift in Sources */,
+				75AC42D31DAF824D00B445FF /* (null) in Sources */,
+				CBF918211DCC95B30037332A /* LoadingIndicator.swift in Sources */,
+				12E07EF21E96851800460A94 /* CollectionType.swift in Sources */,
+				753AAE9F1DCA20B400972B8E /* SAMLAuthViewController.swift in Sources */,
+				75AC42DE1DAF988D00B445FF /* DetailTableDelegate.swift in Sources */,
+				7AB2C56D1D50A95E00D1F039 /* Constants.swift in Sources */,
+				75DD10A41DC1F23B007EB4BC /* TypeValidator.swift in Sources */,
+				75AC42D41DAF824D00B445FF /* CollectionsViewController.swift in Sources */,
+				008CA8C51F2D1B070022F2BF /* MapViewController.swift in Sources */,
+				75AC42DC1DAF988700B445FF /* MasterTableDelegate.swift in Sources */,
+				7A1315B91D4B982000A5DA56 /* AppDelegate.swift in Sources */,
+				75AC42DA1DAF868400B445FF /* Notifier.swift in Sources */,
+				75C9C1151DC22E3B002055E6 /* RegexManager.swift in Sources */,
+				527F2F1258C02184796C1617 /* GeoLocationType.swift in Sources */,
+				A911671878DF4D5B069D723D /* SAPGeoService.swift in Sources */,
+				2ED05C60A2EF5103E1AFAA69 /* SAPGeoServiceMetadata.swift in Sources */,
+				FB416B075356FB4D79C939AE /* SAPGeoServiceDataAccess.swift in Sources */,
+				9CB51DF14E93E315C94FD5C7 /* GeoLocationTypeDetailTableDelegate.swift in Sources */,
+				4DF7F70ED72714451B6EC529 /* GeoLocationMasterTableDelegate.swift in Sources */,
+				008CA8C71F2D39270022F2BF /* SAPGeoLocation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7A1315C31D4B982000A5DA56 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A1315C41D4B982000A5DA56 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CBCA7A9B1E3778A9001AF49E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB909D801E38CA8800218154 /* Base */,
+				CB9BF1FE1E3A01D0004FE213 /* en */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7A1315C71D4B982000A5DA56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7A1315C81D4B982000A5DA56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7A1315CA1D4B982000A5DA56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SAPGeo/SAPGeo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2L6XVDFSLV;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = SAPGeo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sap.tutorials.demoapp.SAPGeo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7A1315CB1D4B982000A5DA56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SAPGeo/SAPGeo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2L6XVDFSLV;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = SAPGeo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sap.tutorials.demoapp.SAPGeo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A1315B01D4B982000A5DA56 /* Build configuration list for PBXProject "SAPGeo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A1315C71D4B982000A5DA56 /* Debug */,
+				7A1315C81D4B982000A5DA56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A1315C91D4B982000A5DA56 /* Build configuration list for PBXNativeTarget "SAPGeo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A1315CA1D4B982000A5DA56 /* Debug */,
+				7A1315CB1D4B982000A5DA56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7A1315AD1D4B982000A5DA56 /* Project object */;
+}
